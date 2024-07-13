@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+#input-container {
+    margin-bottom: 20px;
+}
+
+#weather-container, #joke-container {
+    margin-top: 20px;
+}
