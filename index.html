@@ -1,28 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather and Jokes Dashboard</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather and Jokes Dashboard</title>
+  <!-- Materialize CSS for styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<header>Raining Giggles
-<h2>We cannot be held accountable for the jokes generated!</h2>
-</header>
+
 <body>
-    <h1>Weather and Jokes Dashboard</h1>
-    <div id="input-container">
-        <input type="text" id="city-input" placeholder="Enter city name">
-        <button id="fetch-weather">Get Weather and Joke</button>
+<!-- Video Background -->
+<div class="video-background">
+    <video autoplay muted loop>
+        <source src="./assets/videos/world.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+  <!-- NAVBAR: Navigation bar for the application -->
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Raining Giggles</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down"></ul>
     </div>
-    <div id="weather-container">
-        <h2>Weather</h2>
+  </nav>
+  <!-- END OF NAVBAR. -->
+
+  <!-- MAIN CONTAINER START: Contains all main content -->
+   <div class="container">
+    <h4 id="headerTitle">We cannot be held accountable for the jokes generated!</h4>
+
+  <!-- START OF WEATHER CONTAINER: -->   
+<div id="weather-container" class="section">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Weather</span>
         <p id="weather-info"></p>
+      </div>
     </div>
-    <div id="joke-container">
-        <h2>Joke</h2>
+  </div>
+  <!-- END OF WEATHER CONTAINER. -->
+
+  <!-- START OF INPUT CONTAINER: -->
+  <div id="input-container" class="input-field">
+    <!-- CITY INPUT: Input field for city name -->
+    <input type="text" id="city-input" placeholder="🔍 Enter city name" class="validate">
+    <!-- BUTTON TO FETCH WEATHER AND JOKE: Triggers fetching data -->
+    <button id="fetch-weather" class="btn waves-effect waves-light">Get Weather & Joke</button>
+  </div>
+  <!-- END OF INPUT CONTAINER. -->
+   
+    <!-- START OF JOKE CONTAINER: -->
+<div id="joke-container" class="section">
+    <div class="card">
+      <div class="card-content">
+        <span class="card-title">Joke</span>
         <p id="joke-info"></p>
+      </div>
     </div>
-    <script src="./assets/js/scripts.js"></script>
+  </div>
+  <!-- END OF JOKE CONTAINER. -->
+  
+  </div>
+  <!-- MAIN CONTAINER END. -->
+
+   <!-- FOOTER: -->
+<footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Raining Giggles</h5>
+          <p class="grey-text text-lighten-4">Your go-to for weather and jokes!</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2024 Raining Giggles
+      </div>
+    </div>
+  </footer>
+  <!-- END OF FOOTER. -->
+  
+
+  <!-- Materialize JS for functionality -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Custom JavaScript file -->
+  <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
