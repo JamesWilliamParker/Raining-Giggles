@@ -109,10 +109,25 @@ footer ul li a {
     display: block;
     color: #ffffff;
 }
-
+#frow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.alignf {
+    padding: unset;
+    margin: auto;
+    width: unset !important
+}
 footer ul li a:hover {
     color: #f0f0f0;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.row .col.l3 {
+    width: unset;}
 /* Newsletter Sign up Styles */
 .newsletter-signup {
     background-color: #f0f0f0;
