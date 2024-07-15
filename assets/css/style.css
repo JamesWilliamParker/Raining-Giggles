@@ -69,7 +69,7 @@ input::placeholder {
 /* commenting out to play around
 .page-footer {
 /* page footer in a bad spot needs to go down */
-}
+
 
 /* social media icons 
 .social-icons {
@@ -112,4 +112,33 @@ footer ul li a {
 
 footer ul li a:hover {
     color: #f0f0f0;
+}
+/* Newsletter Sign up Styles */
+.newsletter-signup {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter-signup h5 {
+    margin-bottom: 15px;
+}
+
+.newsletter-signup form {
+    margin-top: 10px;
+}
+
+.newsletter-signup .input-field input[type="email"] {
+    width: 70%;
+    margin-right: 10px;
+}
+
+.newsletter-signup .input-field input[type="email"] + label {
+    left: 0;
+}
+
+.newsletter-signup .btn {
+    margin-top: 10px;
 }
