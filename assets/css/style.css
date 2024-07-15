@@ -44,8 +44,20 @@ input::placeholder {
     color: white; /* Adjust text color for visibility */
 }
 
+.card-content {
+    background-color: #c7e2fa;
+    border-radius: 4px; 
+    border: 1px solid #ccc;
+    padding: 10px;
+
+
+
+
+}
+
+
 #city-input {
-    background-color: #f0f0f0; /* Change to your desired color */
+    background-color: #c7e2fa; /* Change to your desired color */
     border: 1px solid #ccc; /* Optional: border style */
     border-radius: 4px; /* Optional: rounded corners */
     padding: 10px; /* Optional: padding */
