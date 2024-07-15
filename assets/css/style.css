@@ -57,6 +57,50 @@ input::placeholder {
     font-size: 40px;
 }
 
+/* commenting out to play around
 .page-footer {
 /* page footer in a bad spot needs to go down */
+}
+
+/* social media icons 
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.developer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.developer-links li {
+    margin-bottom: 5px;
+}
+ */
+
+ footer {
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    display: block;
+    color: #ffffff;
+}
+
+footer ul li a:hover {
+    color: #f0f0f0;
 }
