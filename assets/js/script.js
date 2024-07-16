@@ -107,4 +107,95 @@ document.getElementById("fetch-weather").addEventListener("click", function () {
     searches.push({ city, weather }); // Add new search
     localStorage.setItem("searches", JSON.stringify(searches)); // Save updated searches to local storage
   }
-  
+  //  Back to Top button
+
+const mybutton = document.getElementById('back-to-top');
+
+if (mybutton) {
+    // Add event listener and other operations here
+} else {
+    console.error('Element with id "back-to-top" not found.');
+}
+// JavaScript for Mood Meter
+
+
+// Selecting all mood buttons
+const moodButtons = document.querySelectorAll('.mood-btn');
+
+// Adding click event listeners to each mood button
+moodButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const selectedMood = this.getAttribute('data-mood');
+        displayMood(selectedMood); // Call function to display mood (you can implement this function)
+        saveMoodToLocalStorage(selectedMood); // Call function to save mood to localStorage
+    });
+});
+
+// Function to display the selected mood (example function, adjust as needed)
+function displayMood(mood) {
+    console.log(`Selected mood: ${mood}`);
+    // You can update UI, trigger actions, etc., based on the selected mood
+}
+
+// Function to save mood to localStorage (example function, adjust as needed)
+function saveMoodToLocalStorage(mood) {
+    localStorage.setItem('currentMood', mood);
+    console.log(`Mood saved to localStorage: ${mood}`);
+}
+
+
+// JavaScript for Chatbot
+
+// Function to add a message to the chatbot interface
+function addMessage(message, sender) {
+  const chatbotMessages = document.getElementById("chatbotMessages");
+
+  // Create a new message element
+  const messageElement = document.createElement("div");
+  messageElement.classList.add("message", sender);
+
+  // Set the message text
+  messageElement.textContent = message;
+
+  // Append the message to the chatbotMessages container
+  chatbotMessages.appendChild(messageElement);
+
+  // Scroll to the bottom of the messages container
+  chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+}
+
+// Function to handle user input and chatbot responses
+function handleUserInput() {
+  const userInput = document.getElementById("userInput");
+  const userMessage = userInput.value.trim();
+
+  if (userMessage === "") {
+      return; // If input is empty, do nothing
+  }
+
+  // Add user message to chatbot interface
+  addMessage(userMessage, "sent");
+
+  // Simulate chatbot response (in this example, a simple echo)
+  setTimeout(() => {
+      addMessage(`You said: "${userMessage}"`, "received");
+  }, 500);
+
+  // Clear the input field
+  userInput.value = "";
+}
+
+// Event listener for when the user clicks the send button or presses Enter
+document.getElementById("sendMessage").addEventListener("click", handleUserInput);
+
+document.getElementById("userInput").addEventListener("keypress", function (e) {
+  if (e.key === "Enter") {
+      handleUserInput();
+  }
+});
+
+// Initial greeting message from the chatbot
+setTimeout(() => {
+  addMessage("Hello! How can I assist you today?", "received");
+}, 500);
+
