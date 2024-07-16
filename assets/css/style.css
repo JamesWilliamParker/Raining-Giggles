@@ -145,6 +145,11 @@ footer a:hover {
     width: auto;
 }
 
+/* .container {
+    max-width: 1200px;  
+   } */
+
+
 .row .col.l3 {
     width: unset;
 }
@@ -313,8 +318,88 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: #555;
+
+ }
+ 
+ 
+ /* Footer styles */
+ footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+ }
+ 
+ 
+ footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+ }
+ 
+ 
+ footer a:hover {
+    text-decoration: underline;
+ }
+ 
+ 
+ /* Company Info Section boxes */
+ 
+ 
+ 
+ 
+ .translucent-box {
+    background-color: rgba(103, 162, 217, 0.378);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ 
+ .translucent-box h2 {
+    font-size: 28px;
+    color: #333;
+ }
+ 
+ 
+ .translucent-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #eae7e7;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .readbtn {
+    position: fixed !important;
+    bottom: 75px  !important;
+    right: 20px;
+    z-index: 1000;
+    background-color: #00ffe1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    width: 108.11px;
+    height: 42.5;
 }
+
+.readbtn:hover {
+  
+        background-color: #0056b3;
+   
+}
+ 
+
 
 /* Footer styles */
 footer a {
     color: #
+}
