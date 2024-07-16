@@ -12,13 +12,13 @@
 </head>
 
 <body>
-<!-- Video Background -->
-<div class="video-background">
+  <!-- Video Background -->
+  <div class="video-background">
     <video autoplay muted loop>
-        <source src="./assets/videos/world.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+      <source src="./assets/videos/world.mp4" type="video/mp4">
+      Your browser does not support the video tag.
     </video>
-</div>
+  </div>
 
   <!-- NAVBAR: Navigation bar for the application -->
   <nav>
@@ -31,191 +31,196 @@
 
 
   <!-- MAIN CONTAINER START: Contains all main content -->
-   <div class="container">
+  <div class="container">
     <h4 id="headerTitle">We cannot be held accountable for the jokes generated!</h4>
 
-  <!-- START OF WEATHER CONTAINER: -->   
-<div id="weather-container" class="section">
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Weather</span>
-        <p id="weather-info"></p>
+    <!-- START OF WEATHER CONTAINER: -->
+    <div id="weather-container" class="section">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Weather</span>
+          <p id="weather-info"></p>
+        </div>
       </div>
     </div>
-  </div>
-  <!-- END OF WEATHER CONTAINER. -->
+    <!-- END OF WEATHER CONTAINER. -->
 
-  <!-- START OF INPUT CONTAINER: -->
-  <div id="input-container" class="input-field">
-    <!-- CITY INPUT: Input field for city name -->
-    <input type="text" id="city-input" placeholder="🔍 Enter city name" class="validate">
-    <!-- BUTTON TO FETCH WEATHER AND JOKE: Triggers fetching data -->
+    <!-- START OF INPUT CONTAINER: -->
+    <div id="input-container" class="input-field">
+      <!-- CITY INPUT: Input field for city name -->
+      <input type="text" id="city-input" placeholder="🔍 Enter city name" class="validate">
+      <!-- BUTTON TO FETCH WEATHER AND JOKE: Triggers fetching data -->
+    </div>
     <button id="fetch-weather" class="btn waves-effect waves-light">Get Weather & Joke</button>
-  </div>
-  <!-- END OF INPUT CONTAINER. -->
-   
+    <!-- END OF INPUT CONTAINER. -->
+
     <!-- START OF JOKE CONTAINER: -->
-<div id="joke-container" class="section">
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Joke</span>
-        <p id="joke-info"></p>
+    <div id="joke-container" class="section">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Joke</span>
+          <p id="joke-info"></p>
+        </div>
       </div>
     </div>
+    <!-- END OF JOKE CONTAINER. -->
+
   </div>
-  <!-- END OF JOKE CONTAINER. -->
-  
-  </div>
-<!-- Newsletter Signup Form -->
-<div class="container">
-  <!-- Newsletter Signup -->
-  <div class="row newsletter-signup">
-      <div class="col s12">
-          <h5 class="white-text">Subscribe to Our Newsletter</h5>
-          <form action="https://docs.google.com/forms/d/e/1FAIpQLSd6ty_VALiE5_HuF_1lFEkiXx6Nve4vMb1vzY0D2R3yeC2AZw/viewform?usp=sharing">
-              <div class="input-field">
-                  <input id="email" type="email" name="email" class="validate" required>
-                  <label for="email">Enter your email</label>
-              </div>
-              <button type="submit" class="btn waves-effect waves-light">Subscribe
-     
-              </button>
-          </form>
-      </div>
-  </div>
-
-
-
-
-  <!-- MAIN CONTAINER END. -->
-        
-
-
-<!-- Super Cool Footer -->
-
-<footer class="page-footer grey darken-3">
+  <!-- Newsletter Signup Form -->
   <div class="container">
-      <div class="row">
- 
- 
+    <!-- Newsletter Signup -->
+    <div class="row newsletter-signup">
+      <div class="col s12">
+        <h5 class="white-text">Subscribe to Our Newsletter</h5>
+        <form
+          action="https://docs.google.com/forms/d/e/1FAIpQLSd6ty_VALiE5_HuF_1lFEkiXx6Nve4vMb1vzY0D2R3yeC2AZw/viewform?usp=sharing">
+          <div class="input-field">
+            <input id="email" type="email" name="email" class="validate" required>
+            <label for="email">Enter your email</label>
+          </div>
+          <button type="submit" class="btn waves-effect waves-light">Subscribe
+
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+    <!-- MAIN CONTAINER END. -->
+
+
+
+    <!-- Super Cool Footer -->
+
+    <footer class="page-footer grey darken-3">
+      <div class="container">
+        <div class="row">
+
+
           <!-- Column 1: Raining Giggles -->
           <div class="col s12 m6 l2 alignf">
-              <h5 class="white-text">Raining Giggles</h5>
-              <ul>
-                  <li><a href="company-info.html#about-us" class="grey-text text-lighten-3">About Us</a></li>
-                  <li><a href="company-info.html#locations" class="grey-text text-lighten-3">Locations</a></li>
-                  <li><a href="company-info.html#contact-us" class="grey-text text-lighten-3">Contact Us</a></li>
-              </ul>
+            <h5 class="white-text">Raining Giggles</h5>
+            <ul>
+              <li><a href="company-info.html#about-us" class="grey-text text-lighten-3">About Us</a></li>
+              <li><a href="company-info.html#locations" class="grey-text text-lighten-3">Locations</a></li>
+              <li><a href="company-info.html#contact-us" class="grey-text text-lighten-3">Contact Us</a></li>
+            </ul>
           </div>
- 
- 
+
+
           <!-- Column 2: Boring Policies -->
           <div class="col s12 m6 l2 alignf">
-              <h5 class="white-text">Legal</h5>
-              <ul>
-                  <li><a href="company-info.html#privacy-policy" class="grey-text text-lighten-3">Privacy Policy</a></li>
-                  <li><a href="company-info.html#terms-of-use" class="grey-text text-lighten-3">Terms of Use</a></li>
-                  <li><a href="company-info.html#accessibility" class="grey-text text-lighten-3">Accessibility</a></li>
-              </ul>
+            <h5 class="white-text">Legal</h5>
+            <ul>
+              <li><a href="company-info.html#privacy-policy" class="grey-text text-lighten-3">Privacy Policy</a></li>
+              <li><a href="company-info.html#terms-of-use" class="grey-text text-lighten-3">Terms of Use</a></li>
+              <li><a href="company-info.html#accessibility" class="grey-text text-lighten-3">Accessibility</a></li>
+            </ul>
           </div>
- 
+
           <!-- Column 4: Social Media Links -->
           <div class="col s12 m6 l2 alignf">
-              <h5 class="white-text">Connect</h5>
-              <ul>
-                  <li><a href="https://www.facebook.com/" class="grey-text text-lighten-3">Facebook</a></li>
-                  <li><a href="https://x.com/home?lang=en" class="grey-text text-lighten-3">Twitter</a></li>
-                  <li><a href="https://www.instagram.com/accounts/login/?hl=en" class="grey-text text-lighten-3">Instagram</a></li>
-                  <li><a href="https://www.linkedin.com/home" class="grey-text text-lighten-3">LinkedIn</a></li>
-              </ul>
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a href="https://www.facebook.com/" class="grey-text text-lighten-3">Facebook</a></li>
+              <li><a href="https://x.com/home?lang=en" class="grey-text text-lighten-3">Twitter</a></li>
+              <li><a href="https://www.instagram.com/accounts/login/?hl=en"
+                  class="grey-text text-lighten-3">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/home" class="grey-text text-lighten-3">LinkedIn</a></li>
+            </ul>
           </div>
- <!-- Column 3: Community Involvement -->
+          <!-- Column 3: Community Involvement -->
           <div class="col s12 m6 l2 alignf">
-              <h5 class="white-text">Community</h5>
-              <ul>
-                  <li><a href="https://www.meetup.com/topics/storm-chasing/" class="grey-text text-lighten-3">Join Storm Chaser Groups</a></li>
-                  <li><a href="https://act.ran.org/page/54714/donate/1?ea.tracking.id=ad_gg&en_og_source=ad_gg&gad_source=1&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrfsOHt5JeswFEIkpfri4nHJDATLhO0Gd5YpRwu_JYrolBsspLK2WRoaAu8NEALw_wcB" class="grey-text text-lighten-3">Donate to a Climate Action Charity</a></li>
-                  <li><a href="https://www.beano.com/categories/jokes" class="grey-text text-lighten-3">More Jokes?</a></li>
-                  <li><a href="https://ca.indeed.com/" class="grey-text text-lighten-3">Careers</a></li>
-              </ul>
+            <h5 class="white-text">Community</h5>
+            <ul>
+              <li><a href="https://www.meetup.com/topics/storm-chasing/" class="grey-text text-lighten-3">Join Storm
+                  Chaser Groups</a></li>
+              <li><a
+                  href="https://act.ran.org/page/54714/donate/1?ea.tracking.id=ad_gg&en_og_source=ad_gg&gad_source=1&gclid=Cj0KCQjwkdO0BhDxARIsANkNcrfsOHt5JeswFEIkpfri4nHJDATLhO0Gd5YpRwu_JYrolBsspLK2WRoaAu8NEALw_wcB"
+                  class="grey-text text-lighten-3">Donate to a Climate Action Charity</a></li>
+              <li><a href="https://www.beano.com/categories/jokes" class="grey-text text-lighten-3">More Jokes?</a></li>
+              <li><a href="https://ca.indeed.com/" class="grey-text text-lighten-3">Careers</a></li>
+            </ul>
           </div>
           <!-- Column 5: Developers' Portfolios -->
           <div class="col s12 m6 l4 alignf">
-              <h5 class="white-text">Developers</h5>
-              <ul class="developer-links">
-                  <li><a href="https://jameswilliamparker.github.io/Portfolio/" target="_blank">James</a></li>
-                  <li><a href="https://uwttn.github.io/portfolio/" target="_blank">Jose</a></li>
-                  <li><a href="https://github.com/Alondra1752?tab=repositories" target="_blank">Alondra</a></li>
-                  <li><a href="https://reina2024.github.io/portfolio/" target="_blank">Reina</a></li>
-              </ul>
+            <h5 class="white-text">Developers</h5>
+            <ul class="developer-links">
+              <li><a href="https://jameswilliamparker.github.io/Portfolio/" target="_blank">James</a></li>
+              <li><a href="https://uwttn.github.io/portfolio/" target="_blank">Jose</a></li>
+              <li><a href="https://github.com/Alondra1752?tab=repositories" target="_blank">Alondra</a></li>
+              <li><a href="https://reina2024.github.io/portfolio/" target="_blank">Reina</a></li>
+            </ul>
           </div>
- 
- 
-      </div>
- 
- 
- <!-- Mood Meter Section -->
- <div class="row">
-  <div class="col s12">
-      <h6 class="white-text">How are you feeling today?</h6>
-      <div id="mood-buttons">
-          <button class="mood-btn" data-mood="happy">😄 Happy</button>
-          <button class="mood-btn" data-mood="neutral">😐 Neutral</button>
-          <button class="mood-btn" data-mood="sad">😞 Sad</button>
-      </div>
-  </div>
- </div>
- 
- 
-   <!-- Logo Section -->
-   <div class="row align-items-center">
-    <div class="col s12 center">
-        <img src="./assets/Images/RainingGigglesBanner.png" alt="Raining Giggles Logo" style="max-width: 600px;">
-    </div>
- </div>
- 
- 
- <!-- ChatBot Section -->
- <div class="row">
-    <div class="col s12 chatbot-container">
-        <div class="chatbot-messages">
-            <div class="message received">Hello! How can I help you today?</div>
-            <div class="message sent">Hi there! I'm just browsing.</div>
-            <div class="message received">Feel free to ask any questions.</div>
+
+
         </div>
-        <div class="chatbot-input">
-            <input type="text" placeholder="Type your message...">
-            <button>Send</button>
-        </div>
-    </div>
- </div>
- 
- 
- <!-- Back to Top Button -->
- <div class="col s12">
-  <a href="#top" class="back-to-top">Back to Top</a>
-<!-- Read Aloud Button -->
-<button id="read-aloud" class="Readbtn">Read Aloud</button>
-</div>
- 
-      <!-- Copyright Notice -->
-      <div class="row">
+
+
+        <!-- Mood Meter Section -->
+        <div class="row">
           <div class="col s12">
-              <p class="grey-text text-lighten-4">© 2024 Raining Giggles. All rights reserved.</p>
+            <h6 class="white-text">How are you feeling today?</h6>
+            <div id="mood-buttons">
+              <button class="mood-btn" data-mood="happy">😄 Happy</button>
+              <button class="mood-btn" data-mood="neutral">😐 Neutral</button>
+              <button class="mood-btn" data-mood="sad">😞 Sad</button>
+            </div>
           </div>
+        </div>
+
+
+        <!-- Logo Section -->
+        <div class="row align-items-center">
+          <div class="col s12 center">
+            <img src="./assets/Images/RainingGigglesBanner.png" alt="Raining Giggles Logo" style="max-width: 600px;">
+          </div>
+        </div>
+
+
+        <!-- ChatBot Section -->
+        <div class="row">
+          <div class="col s12 chatbot-container">
+            <div class="chatbot-messages">
+              <div class="message received">Hello! How can I help you today?</div>
+              <div class="message sent">Hi there! I'm just browsing.</div>
+              <div class="message received">Feel free to ask any questions.</div>
+            </div>
+            <div class="chatbot-input">
+              <input type="text" placeholder="Type your message...">
+              <button>Send</button>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Back to Top Button -->
+        <div class="col s12">
+          <a href="#top" class="back-to-top">Back to Top</a>
+          <!-- Read Aloud Button -->
+          <button id="read-aloud" class="readbtn">Read Aloud</button>
+        </div>
+
+        <!-- Copyright Notice -->
+        <div class="row">
+          <div class="col s12">
+            <p class="grey-text text-lighten-4">© 2024 Raining Giggles. All rights reserved.</p>
+          </div>
+        </div>
+
+
       </div>
- 
- 
-  </div>
- 
-</footer>
+
+    </footer>
 
 
-  <!-- Materialize JS for functionality -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- Custom JavaScript file -->
-  <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/accessibilty.js"></script>
+    <!-- Materialize JS for functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Custom JavaScript file -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/accessibilty.js"></script>
 </body>
 
 </html>
