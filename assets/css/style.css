@@ -364,6 +364,25 @@ footer {
     width: auto;
  }
  
- 
+ .Readbtn {
+    position: fixed !important;
+    bottom: 75px  !important;
+    right: 20px;
+    z-index: 1000;
+    background-color: #00ffe1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+    width: 108.11px;
+    height: 42.5;
+}
 
+.Readbtn:hover {
+  
+        background-color: #0056b3;
+   
+}
  
