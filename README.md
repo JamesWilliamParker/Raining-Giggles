@@ -19,6 +19,16 @@ The following individuals have contriubuted to this project:
 - Alondra Santana https://github.com/Alondra1752
 - Reina Simms https://github.com/Reina2024 
 
+## Deployment Link
+https://jameswilliamparker.github.io/Raining-Giggles/
+
+## Repository Link 
+https://github.com/JamesWilliamParker/Raining-Giggles
+
+## Resources
+W3 Schools, MDN, Materialize, JS.DOCS, ChatGPT, Mary, John, Cody
+
+
 
 
 
