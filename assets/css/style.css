@@ -13,12 +13,21 @@ body {
 
 /* Style for the input container */
 #input-container {
-    margin-top: 20px; /* Add top margin */
+    background-color: #c7e2fa;
+    border-radius: 4px; 
+    border: 1px solid #ccc;
+    padding: 10px;; /* Add top margin */
 }
 
 /* Styles for weather and joke containers */
 #weather-container, #joke-container {
     margin-top: 20px; /* Add top margin */
+}
+
+#fetch-weather {
+    display: flex;
+    align-self: center;
+    width: fit-content;
 }
 
 /* Darker placeholder text color */
@@ -60,7 +69,7 @@ input::placeholder {
     background-color: #c7e2fa; /* Change to your desired color */
     border: 1px solid #ccc; /* Optional: border style */
     border-radius: 4px; /* Optional: rounded corners */
-    padding: 10px; /* Optional: padding */
+    padding: 0px; /* Optional: padding */
 }
 
 #headerTitle {
@@ -401,5 +410,5 @@ header nav ul li a:hover {
 
 /* Footer styles */
 footer a {
-    color: #
+    color: #424242;
 }
