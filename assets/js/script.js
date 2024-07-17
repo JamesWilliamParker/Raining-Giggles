@@ -107,6 +107,42 @@ document.getElementById("fetch-weather").addEventListener("click", function () {
     searches.push({ city, weather }); // Add new search
     localStorage.setItem("searches", JSON.stringify(searches)); // Save updated searches to local storage
   }
+
+// Buttons and Save City to Local Storage
+function saveCity(city) {
+  let cities = JSON.parse(localStorage.getItem("cities")) || [];
+  if (!cities.includes(city)) {
+      cities.push(city);
+      localStorage.setItem("cities", JSON.stringify(cities));
+  }
+}
+
+// Function to create a button for the city
+function createCityButton(city) {
+  const buttonContainer = document.getElementById("city-buttons-container");
+  const button = document.createElement("button");
+  button.textContent = city;
+  button.className = "styled-button"; // Add a class for styling
+  button.addEventListener("click", function () {
+      // Handle button click to fetch weather and joke for this city
+      getWeather(city);
+  });
+  buttonContainer.appendChild(button);
+}
+
+// Initial function call to retrieve and display weather for saved cities
+function initializeSavedCities() {
+  const cities = JSON.parse(localStorage.getItem("cities")) || [];
+  cities.forEach(city => {
+      createCityButton(city);
+  });
+}
+
+// Call initializeSavedCities to load existing cities on page load
+initializeSavedCities();
+
+
+
   //  Back to Top button
 
 const mybutton = document.getElementById('back-to-top');
